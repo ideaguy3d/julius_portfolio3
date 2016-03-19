@@ -1,0 +1,74 @@
+<h2>Here is some test WebGL content</h2>
+<h3 id="jtime">... <span id="jcountdown" style="color:red">30seconds</span>  left till the <strong>Interactive 3D content Loads </strong><i class="fa fa-smile-o fa-3x"></i></h3>
+<script id="mycountdown" type="text/javascript" language="JavaScript">
+  var counter = (function(){
+    var privateCounter = 30;
+    return {
+      zcounter: function(){
+        privateCounter--;
+        //console.log("privateCounter" + privateCounter);
+        return privateCounter;
+      }
+    };
+  })();
+  setInterval(function(){
+    var $jcount = jQuery('#jcountdown');
+    var timeleft = counter.zcounter();
+    if(timeleft === 0){
+      $jcount.remove();
+      jQuery('#mycountdown').remove();
+    }
+    $jcount.text(timeleft+"seconds")
+  }, 1000);
+</script>
+<p>CURRENT TIME:</p>
+<p id="demo"></p>
+
+<script>
+  var myVar = setInterval(function(){ myTimer() }, 1000);
+
+  function myTimer() {
+    var d = new Date();
+    var t = d.toLocaleTimeString();
+    document.getElementById("demo").innerHTML = t;
+  }
+</script>
+<h4>
+  Please wait for about 25seconds for the WebGL to load. IF you would like to see how I made this
+  character click <a href="http://julius.azurewebsites.net/gamedev.cshtml" target="_blank"><strong>Here</strong></a>
+</h4>
+<h1 id="webgl"></h1>
+<button onclick="SittingCs()">Make Avatar Sit</button>
+<br>
+<script type="text/javascript">
+  function SittingCs(){
+    SendMessage('wo-avatar', 'Sitting', 'browser JavaScript worked ^_^');
+    console.log("SendMessage() called (: , hopefully. ");
+  }
+
+  function SittingJs(str){
+    jQuery('#webgl').text(str+"... from WebGL content :)")
+  }
+</script>
+<hr>
+<!------ WebGL content ------>
+<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="1960px"></canvas>
+<hr>
+
+<!------ WebGL scripts ------>
+<script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 134217728,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    dataUrl: "Release2/valleyhack.data",
+    codeUrl: "Release2/valleyhack.js",
+    memUrl: "Release2/valleyhack.mem",
+  };
+</script>
+<script src="Release2/UnityLoader.js"></script>
+
+
+<!------ Custom WebGL scripts to call functions ------>
+
+

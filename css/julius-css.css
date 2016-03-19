@@ -1,0 +1,118 @@
+@import url(jlib.css);
+
+/* ======== navigation ======== */
+.header {
+  background-color: #555;
+  color: #ffffff;
+}
+
+.header a {
+  color: inherit;
+}
+
+.nav li a {
+  padding: 28px 10px;
+}
+
+.logo {
+  padding: 14px 0;
+  display: block;
+  font-family: Consolas, Menlo, Monaco, monospace;
+  max-height: 81px;
+}
+
+.logo:hover {
+  text-decoration: none;
+  color: #1c1c1c;
+  /*transition: all linear 500s;*/
+}
+
+.logo h1 {
+  padding: 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .logo-block {
+    float: left;
+  }
+
+  .nav-block {
+    float: right;
+  }
+
+  .nav li, .nav li a {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+/* ======== footer ======== */
+.footer {
+  padding: 24px 0;
+  background-color: #434343;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+.footer-copyright-block {
+  font-size: 80%;
+  margin: 12px 0 0 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .footer {
+    text-align: left;
+  }
+
+  .footer-copyright-block {
+    float: right;
+  }
+
+  .footer-social-block {
+    float: left;
+  }
+}
+
+/* ======== team ======== */
+.team-block {
+  text-align: center;
+}
+
+.team-each {
+  margin: 0 0 28px 0;
+
+}
+
+.team-each-member {
+  text-transform: uppercase;
+}
+
+.team-each-role {
+  font-size: 80%;
+}
+
+@media only screen and (min-width: 600px) {
+  .team-each {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .team-each {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .team-each {
+    width: 25%;
+  }
+}
+
+
+

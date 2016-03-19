@@ -1,0 +1,258 @@
+.seq-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header-reset {
+  opacity: 0;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+#sequence1 {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 6% auto;
+  padding: 0;
+  background-image: url(../../img/julius1b.png);
+  background-color: #434343;
+  color: whitesmoke;
+  width: 100%;
+  height: 800px;
+}
+#sequence1 .jseq-landing-nav {
+  position: absolute;
+  bottom: 30%;
+  right: 36%;
+  width: 150px;
+}
+#sequence1 .jseq-landing-nav .fa-arrow-circle-left {
+  float: left;
+}
+#sequence1 .jseq-landing-nav .fa-arrow-circle-right {
+  float: right;
+}
+#sequence1 .jseq-landing-nav .btn {
+  border-radius: 0;
+}
+#sequence1 .seq-canvas {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+}
+#sequence1 .seq-canvas > li:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+#sequence1 .seq-canvas > * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  white-space: normal;
+}
+#sequence1 .seq-canvas .slide1 {
+  border: none;
+}
+#sequence1 .seq-canvas .slide2 {
+  border: none;
+}
+#sequence1 .seq-canvas .slide3 {
+  border: none;
+}
+#sequence1 .content {
+  display: inline-block;
+  margin: 20% 4%;
+  vertical-align: middle;
+  font-size: 16px;
+  width: 60%;
+  padding-left: 20%;
+}
+#sequence1 h1 {
+  opacity: 0;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transform: translate(0, -20px);
+  transform: translate(0, -20px);
+}
+#sequence1 p {
+  opacity: 0;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transform: translate(0, 20px);
+  transform: translate(0, 20px);
+}
+#sequence1 .seq-in h1,
+#sequence1 .seq-in p {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+#sequence1 .seq-out h1,
+#sequence1 .seq-out p {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.jbg-fixed {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.jbg-landing {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  float: left;
+}
+.jbg-landing .jbg-me1 {
+  background-image: url(julius1.png);
+}
+.jpad-160 {
+  padding: 160px 0;
+}
+.jheader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #555;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+.navbar-block {
+  float: right;
+}
+.navbar-block li {
+  display: inline-block;
+  background-color: #444;
+  top: 41px;
+  bottom: 0;
+  text-transform: uppercase;
+}
+.jtop {
+  top: 64px;
+}
+.bg-cover,
+.bg-fixed {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.bg-fixed {
+  background-attachment: fixed;
+  top: 52px;
+}
+.bg-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.bg-slide-fade {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  float: left;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.bg-slide-fade div {
+  width: 100%;
+  height: 100%;
+}
+.intro-message {
+  color: #fff;
+  padding-top: 20%;
+  font-family: Segoe UI, Arial, sans-serif;
+}
+.intro-message .jheading {
+  font-size: 470%;
+}
+.intro-message .primary-role {
+  font-weight: 300;
+  font-size: 490%;
+}
+.intro-message .jmorph h1 {
+  display: inline-block;
+}
+.intro-message .jmorph .left {
+  margin: 0 2px;
+}
+.intro-message .jmorph .middle {
+  margin: 0 6px;
+}
+.intro-message .jmorph .right {
+  margin: 0 2px;
+}
+.intro-message button.btn {
+  border-radius: 0;
+  margin-top: 20px;
+  width: 33%;
+  height: 64px;
+}
+.intro-message > h1 {
+  margin: 24px;
+}
+.jcontainer-main {
+  position: relative;
+  margin-top: 27%;
+}
+.jcenter {
+  text-align: center;
+}
+.container-fluid {
+  padding: 0;
+}
+.jheader-landing {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  height: 64px;
+  color: whitesmoke;
+  z-index: 100;
+}
+.jheader-landing a {
+  color: inherit;
+}
+.jnav .jnav-nav {
+  float: right;
+}
+.jnav li a {
+  padding: 10px 10px;
+  display: inline-block;
+}
+.jnav-block {
+  font-weight: 300;
+  height: 100%;
+  text-transform: uppercase;
+  font-size: 90%;
+  text-align: right;
+  top: 41px;
+  right: -200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 200px;
+  transition: all 0.2s ease;
+}

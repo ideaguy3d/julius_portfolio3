@@ -1,0 +1,313 @@
+.w-h(@x:100%; @y:100%) {
+  width: @x;
+  height: @y;
+}
+
+.seq-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-reset {
+  //margin: 0;
+  //display: block;
+  opacity: 0;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.jbox-shadow (){
+  border: none;
+}
+
+#sequence1 {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 6% auto;
+  padding: 0;
+  background-image: url(../../img/julius1b.png);
+  background-color: #434343;
+  color: whitesmoke;
+  .w-h(100%; 800px);
+  .jseq-landing-nav {
+    position: absolute;
+    bottom: 30%;
+    right: 36%;
+    width: 150px;
+    .fa-arrow-circle-left {
+      float: left;
+    }
+    .fa-arrow-circle-right {
+      float: right;
+    }
+    .btn {border-radius: 0;}
+  }
+  .seq-canvas {
+    position: absolute;
+    .seq-reset;
+    .w-h(100%; 100%);
+    white-space: nowrap;
+    & > li:before {
+      //this will vertically center
+      //align li.content elements
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    & > * {
+      .seq-reset;
+      display: inline-block;
+      vertical-align: top;
+      .w-h(100%; 100%);
+      text-align: center;
+      white-space: normal;
+    }
+    .slide1 { .jbox-shadow; }
+    .slide2 { .jbox-shadow; }
+    .slide3 {.jbox-shadow; }
+  }
+  & .content {
+    //used to vertically center align
+    //li.content elements
+    display: inline-block;
+    margin: 20% 4%;
+    vertical-align: middle;
+    font-size: 16px;
+    width: 60%;
+    padding-left: 20%;
+  }
+  //starting position
+  & h1 {
+    .header-reset;
+    -webkit-transform: translate(0, -20px);
+    transform: translate(0, -20px);
+  }
+  & p {
+    .header-reset;
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px);
+  }
+
+  //animate in positions for content
+  & .seq-in h1, & .seq-in p {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  //animate out positions for content
+  & .seq-out h1, & .seq-out p {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+//home3 style rules
+
+.jbg-fixed {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.jbg-landing {
+  .w-h(100%; 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  float: left;
+
+  .jbg-me1 {
+    background-image: url(julius1.png);
+  }
+}
+
+.jpad-160 {
+  padding: 160px 0;
+}
+
+.jheader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #555;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-block {
+  float: right;
+
+  & li {
+    display: inline-block;
+    background-color: #444;
+    top: 41px;
+    bottom: 0;
+    text-transform: uppercase;
+  }
+}
+
+.jtop {
+  top: 64px;
+}
+
+.bg-cover, .bg-fixed {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .w-h();
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+  top: 52px;
+}
+
+.bg-overlay {
+  position: absolute;
+  .w-h();
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, .7);
+}
+
+.bg-slide-fade {
+  position: absolute;
+  .w-h();
+  float: left;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  div {
+    .w-h();
+  }
+}
+
+.intro-message {
+  color: #fff;
+  padding-top: 20%;
+  font-family: Segoe UI, Arial, sans-serif;
+
+  .jheading {
+    font-size: 470%;
+  }
+
+  .primary-role {
+    font-weight: 300;
+    font-size: 490%;
+  }
+
+  .jmorph {
+    h1 {
+      display: inline-block;
+    }
+
+    .left {
+      margin: 0 2px;
+    }
+
+    .middle {
+      margin: 0 6px;
+    }
+
+    .right {
+      margin: 0 2px;
+    }
+
+  }
+
+  button.btn {
+    border-radius: 0;
+    margin-top: 20px;
+    width: 33%;
+    height: 64px;
+  }
+
+  & > h1 {
+    margin: 24px;
+  }
+}
+
+.jcontainer-main {
+  position: relative;
+  margin-top: 27%;
+}
+
+.jcenter {
+  text-align: center;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.jheader-landing {
+  box-shadow: 0 4px 4px rgba(0,0,0,0.7);
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  height: 64px;
+  color: whitesmoke;
+  z-index: 100;
+  a {
+    color: inherit;
+  }
+}
+
+.jnav {
+
+ .jnav-nav {
+   float: right;
+ }
+
+  li a {
+    padding: 10px 10px;
+    display: inline-block;
+  }
+}
+
+.jnav-block {
+  font-weight: 300;
+  height: 100%;
+  text-transform: uppercase;
+  font-size: 90%;
+  text-align: right;
+  top: 41px;
+  right: -200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 200px;
+  transition: all 0.2s ease;
+}
+
+.jnavbar-header {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

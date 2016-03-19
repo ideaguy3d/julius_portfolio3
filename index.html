@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Julius' Portfolio</title>
+  <meta name="description" content="Julius' Portfolio Site">
+
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta name="HandheldFriendly" content="true"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <!-- css libraries -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="bower_components/animatecss.css"/>
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"/>
+  <link rel="stylesheet" href="css_libs/slick.css">
+  <link rel="stylesheet" href="css_libs/slick-theme.css">
+  <link rel="stylesheet" href="jq-plugins/morphext/dist/morphext.css">
+
+  <!-- custom css
+  <link rel="stylesheet" href="j-core/css/jstyle.css"/>
+  <link rel="stylesheet" href="j-core/css/jmenu-system.css"/>
+  <link rel="stylesheet" href="j-core/css/jsequence.css">-->
+  <link rel="stylesheet" href="css/julius-css.css">
+
+
+
+  <!-- EXTRASOURCES -->
+  <!-- Loads the Javascript code...
+  <script src="html5test1/src/Runtime.js"></script>-->
+
+</head>
+
+
+<body ng-app="julius-portfolio">
+<!-- check for old versions of IE  -->
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<header ng-include="'j-core/views/nav-webapp.html'" class="header"></header>
+
+<ui-view></ui-view>
+
+<hr>
+<!-- footer -->
+<footer class="footer">
+  <div class="container-full">
+    <div class="grid-parent">
+      <div class="footer-social-block">
+        <a href=""><i class="fa fa-facebook fa-3x"></i></a>
+        <a href=""><i class="fa fa-twitter fa-3x"></i></a>
+        <a href=""><i class="fa fa-linkedin-square fa-3x"></i></a>
+      </div>
+      <div class="footer-copyright-block">
+        <div>&copy; Julius Alvarado</div>
+        <div><a href="robots.txt" target="_blank">Credits</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- js libraries -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/firebase/firebase.js"></script>
+<script src="bower_components/angularfire/dist/angularfire.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-ui-utils/ui-utils.min.js"></script>
+<script src="bower_components/angular-md5/angular-md5.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+<script src="bower_components/wow/wow.js"></script>
+<script src="bower_components/sequencejs/imagesloaded.pkgd.min.js"></script>
+<script src="bower_components/sequencejs/hammer.min.js"></script>
+<script src="bower_components/sequencejs/sequence.js"></script>
+<script src="jq-plugins/slick.min.js"></script>
+<script src="jq-plugins/morphext/dist/morphext.min.js"></script>
+
+
+
+
+<!-- custom js -->
+<script src="config.js"></script>
+<script src="application.js"></script>
+
+<script src="j-core/core.mod.js"></script>
+<!--<script src="j-core/controllers/j-core.header.ctrl.js"></script>-->
+<script src="j-core/controllers/core.home.ctrl.js"></script>
+<script src="j-core/config/core.client.routes.js"></script>
+
+<script src="j-apps/j-apps.mod.js"></script>
+<script src="j-apps/config/j-apps.routes.js"></script>
+<script src="j-apps/controllers/j-apps.ctrl.js"></script>
+
+<!--<script src="j-core/jquery/jparallax.js"></script>-->
+
+
+</body>
+</html>

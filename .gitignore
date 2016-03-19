@@ -1,0 +1,26 @@
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
+.idea
+workspace.xml
+j Read.txt
+ionic-sass
+platforms
+scss
+hooks
+plugins
+resources
+stuff
+test
+w_ngNinja&ionicStuff
+infinite
+www/assets
+css/main.css
+css/reset.css
+firebase.json
+css_libs
+assets
+jhaSecurityRules
+

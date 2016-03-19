@@ -1,0 +1,20 @@
+<section class="jbg-fixed jpad-160 jbg-me1">
+  <div class="jbg-landing">
+    <div class="jbg-fixed jbg-me1"></div>
+  </div>
+
+  <article class="container">
+    <h2>cache practice:</h2>
+    key: <input id="jkey" type="text" ng-model="key">
+    value: <input id="jvalue" type="text" ng-model="value">
+    <button class="btn" ng-click="addToCache(key, value)">Add to Cache</button>
+    <br><br>
+    <input type="text" ng-model="key2read" placeholder="key to read">
+    <h3>Key Value = {{readFromCache(key2read)}}</h3>
+    <h4>cache info: {{getCacheStats()}}</h4>
+  </article>
+</section>
+
+<section>
+  <h1>What I do</h1>
+</section>
