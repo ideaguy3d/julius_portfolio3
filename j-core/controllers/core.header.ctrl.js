@@ -69,6 +69,5 @@ angular.module('core').controller('HeaderController',
                     }
                 );
             };
-
         }
     ]);

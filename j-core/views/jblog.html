@@ -1,0 +1,36 @@
+<!-- banner anim -->
+<section class="container-main">
+    <div class="center">
+        <div class="banner-home">
+            <div class="heading-block">
+                <h1 class="heading-primary heading-primary-banner wow zoomInUp" data-wow-delay="0.7s">Hacker. Designer.
+                    Thinker.</h1>
+                <div class="sub-heading sub-heading-banner wow zoomInUp" data-wow-delay="0.9s">I code. I design. I
+                    imagine.
+                </div>
+            </div>
+            <div class="banner-img-block clearfix">
+                <img src="css/img/ideaguy2d.png" alt="" class="banner-img banner-img-1" width="280">
+                <img src="css/img/ideaguy.png" alt="" class="banner-img banner-img-2" width="280">
+                <img src="css/img/ideaguy3d.png" alt="" class="banner-img banner-img-3" width="280">
+            </div>
+        </div>
+    </div>
+</section>
+
+<h1 class="heading-primary">... jBlog Coming Soon!</h1>
+<section class="container-sm">
+    <div class="sub-heading">This will be a personal reference to place example's from my studies, e.g. example's of
+        when to use $provider vs $service vs $factory... and <strong>all</strong> of the other built in ng directives, providers, services, functions, types and filters. As well as CSS animations, pretty design components I've coded (e.g.
+        Material Design, Bootstrap, W3.CSS), ReactJS components I make, etc.
+    </div>
+</section>
+
+<script language="JavaScript" type="text/javascript">
+    new WOW().init();
+
+    //when the images inside the banner-img-block have loaded, do something.
+    jQuery('.banner-img-block').imagesLoaded(function () {
+        jQuery('.banner-img').addClass('banner-img-animate');
+    });
+</script>

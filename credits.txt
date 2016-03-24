@@ -1,0 +1,34 @@
+Big Thanks to all the 3rd party CSS & JavaScript
+libraries I use to develop:
+
+
+<!-- javascript libraries -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/firebase/firebase.js"></script>
+<script src="bower_components/angularfire/dist/angularfire.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-ui-utils/ui-utils.min.js"></script>
+<script src="bower_components/angular-md5/angular-md5.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+
+<script src="bower_components/wow/wow.js"></script>
+<script src="bower_components/sequencejs/imagesloaded.pkgd.min.js"></script>
+<script src="bower_components/sequencejs/hammer.min.js"></script>
+<script src="bower_components/sequencejs/sequence.js"></script>
+<script src="jq-plugins/slick.min.js"></script>
+<script src="jq-plugins/morphext/dist/morphext.min.js"></script>
+<script src="jq-plugins/imagesloaded.pkgd.min.js"></script>
+
+<!-- css libraries -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+<link rel="stylesheet" href="css_libs/slick.css">
+<link rel="stylesheet" href="css_libs/slick-theme.css">
+<link rel="stylesheet" href="jq-plugins/morphext/dist/morphext.css">
+<link rel="stylesheet" href="css/font-icons/style.css">
+<link rel="stylesheet" href="bower_components/animatecss.css"/>
+<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"/>
+
+
+

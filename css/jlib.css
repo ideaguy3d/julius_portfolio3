@@ -163,6 +163,7 @@ input[type="submit"], button {
 
 textarea {
   vertical-align: top;
+  min-height: 200px;
 }
 
 table {
@@ -210,6 +211,22 @@ th {
   text-align: center;
   font-size: 450%;
   padding: 48px 0;
+}
+
+.heading-secondary {
+  text-align: center;
+  font-size: 350%;
+  padding: 48px 0;
+}
+
+.sub-heading {
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 38px;
+}
+
+.heading-block [class|="heading"] {
+  padding-bottom:0;
 }
 
 .ul-base {
@@ -297,6 +314,7 @@ th {
 .grid-child {
   padding-left: 15px;
   padding-right: 15px;
+  /*display: inline-block;*/
 }
 
 

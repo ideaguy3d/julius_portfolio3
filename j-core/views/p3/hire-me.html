@@ -1,3 +1,61 @@
-<div>
-  <h1>Hire ME Page</h1>
+<div class="notify notify-error">Please Note: This form does <strong>not</strong> work <strong>
+    yet</strong>. Please email me instead: <a href="mailto:angularjs.uiux@gmail.com"><strong>angularjs.uiux@gmail.com</strong></a></div>
+
+<div class="form-join-block">
+    <form class="form-join js-form-validate">
+        <div class="heading-block">
+            <h2 class="heading-secondary">
+                Hire <i class="fa fa-code"></i><strong>j.Alvarado()</strong><i class="fa fa-code"></i>
+            </h2>
+            <div class="sub-heading">A Developer & Creative Hire in 1.</div>
+        </div>
+
+        <div class="container-main">
+            <div class="grid-parent">
+                <div class="grid-child form-join-each">
+                    <div class="field-block">
+                        <label for="join-input-name" class="label label-required">Your Company</label>
+                        <input type="text" class="input-text input-required" id="join-input-name">
+                    </div>
+                </div>
+
+                <div class="grid-child form-join-each">
+                    <div class="field-block">
+                        <label for="join-input-email" class="label label-required">Your Email</label>
+                        <input type="text" class="input-text input-required" id="join-input-email">
+                    </div>
+                </div>
+
+                <div class="grid-child form-join-each">
+                    <div class="field-block">
+                        <label for="join-input-role" class="label label-required">Role I will fill</label>
+                        <select class="input-text input-required" id="join-input-role">
+                            <option value="">Role</option>
+                            <option value="front-end-developer">Front End Developer</option>
+                            <option value="uiux-developer">UIUX Developer</option>
+                            <option value="junior-graphic-designer">Jr.Graphic Designer</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field-block">
+                    <label for="join-input-info" class="label label-required">Job Description</label>
+                    <textarea name="" id="join-input-info" cols="30" rows="10"
+                              class="input-text input-required"></textarea>
+                </div>
+
+                <div class="field-block center">
+                    <input type="submit" class="button" value="Hire Me Now" ng-click="offer()">
+                </div>
+
+                <div class="container-mid center" ng-show="show">
+                    <h2>^_^ Thank You Very much for your interest! ^_^</h2>
+                    <p>...but I haven't implemented this yet. I will very soon though.</p>
+                    <p>In the meantime <strong>Please</strong> email me:</p>
+                    <a href="mailto:angularjs.uiux@gmail.com">angularjs.uiux@gmail.com</a>
+                    <small>last updated 6:27pm on 3-23-2016</small>
+                </div>
+            </div>
+        </div>
+    </form>
 </div>

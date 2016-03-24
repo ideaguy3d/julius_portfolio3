@@ -28,11 +28,11 @@ angular.module('core').controller('HomeController',
       //$parse code
       var getter = $parse('event.name');
       var fn = $parse('1+1');
-      console.log(fn());
+      //console.log(fn());
 
       var myobj1 = {event: {name: 'Julius'}},
         myobj2 = {event: {name: 'Maximus'}};
-      console.log("My name is: "+getter(myobj1)+" "+getter(myobj2));
+      //console.log("My name is: "+getter(myobj1)+" "+getter(myobj2));
 
 
 
